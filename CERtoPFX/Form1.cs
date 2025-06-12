@@ -1,4 +1,4 @@
-﻿using DevExpress.Utils.CommonDialogs;
+using DevExpress.Utils.CommonDialogs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,7 +38,7 @@ namespace CERtoPFX
                 File.WriteAllBytes(this.certificateFileName, bytes);
                 MessageBox.Show("Done");
             }
-            else if(filed.ShowDialog() == DialogResult.Cancel)
+            else
             {
                 MessageBox.Show("You Canceled this Operation!!!", "CERtoPFX", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
